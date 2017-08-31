@@ -1,5 +1,10 @@
 const webpack = require('webpack');
-
+const minifier = require('minifier')
+const input = './src/css/styles.css'
+const options = {
+  output: "./dev/app.min.css"
+}
+minifier.minify(input, options);
 module.exports = {
   // entry: './main.js',
   entry: {
