@@ -1,4 +1,4 @@
-import bundle from './dev/the-lynched-app.min.js';
+import bundle from './dev/the-lynched-hate-crime.min.js';
 var x = new ProtoGraph.Card.toMaps()
 x.init({
   selector: document.querySelector('#card-list-div'),
