@@ -6,8 +6,7 @@ module.exports = {
     app: './main.js'
   },
   output: {
-    path: __dirname,
-    publicPath: '/',
+    path: __dirname+'/dev/',
     filename: 'the-lynched-app.min.js',
   },
   plugins: [

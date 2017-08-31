@@ -3,12 +3,11 @@ const webpack = require('webpack');
 module.exports = {
   // entry: './main.js',
   entry: {
-    app: './main-hate-crime.js'
+    app: './main-home.js'
   },
   output: {
     path: __dirname+'/dev/',
-    publicPath: '/',
-    filename: 'the-lynched-hate-crime.min.js',
+    filename: 'the-lynched-app-home.min.js',
   },
   plugins: [
     new webpack.DefinePlugin({

@@ -4,8 +4,8 @@
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>#Mobbed: What emboldens lynching and vigilantism in India?</title>
-    <link rel="stylesheet" type="text/css" href="lib/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../lib/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/styles.css">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
@@ -28,8 +28,8 @@
       </div>
     </div>
     <div class="ui grid cover-image-div" >
-      <img class="cover-image" src="src/img/lynching-cover-desktop.png" >
-      <img class="cover-image-mobile" src="src/img/lynching-cover-mobile.png" width="100%" >
+      <img class="cover-image" src="../src/img/lynching-cover-desktop.jpg" >
+      <img class="cover-image-mobile" src="../src/img/lynching-cover-mobile.jpg" width="100%" >
       <p class="notes-div disclaimer-text">Disclaimer - This project aims to understand what causes and facilitates mob violence<br/> in India with the hope that we can move a step closer to preventing such incidents.</p>
     </div>
     <div class="ui grid hate-crime-toggle">
@@ -56,24 +56,9 @@
       </div>
     </div>
     </div>
-    <script src="lib/jquery.min.js"></script>
-    <script src="lib/semantic.min.js"></script>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/semantic.min.js"></script>
     <script src="https://d2m6lzru8erw1k.cloudfront.net/lib/protoGraph.min.js"></script>
-    <script src="src/js/fixedNavBar.js"></script>
-    <script src = "the-lynched-hate-crime.min.js"></script>
-    <script type="text/javascript">
-      var x = new ProtoGraph.Card.toMaps()
-        x.init({
-        selector: document.querySelector('#card-list-div'),
-        dataURL: 'https://cdn.protograph.pykih.com/49a045aea2b71456f5d04f4a/index.json',
-        topoURL: 'src/data/india-topo.json',
-        chartOptions: {
-          chartTitle: 'Mob Justice in India',
-          height: 600,
-          defaultCircleColor: '#F02E2E'
-        }
-      })
-      x.renderLaptop();
-    </script>
+    <script src = "./the-lynched-hate-crime-init.min.js"></script>
   </body>
 </html>

@@ -33,10 +33,18 @@
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "build": "npm run build:std && npm run build:edit",
+    "build": "npm run build:std && npm run build:stdinit_windows && npm run build:edit &&",
     "start": "webpack-dev-server --public --host 0.0.0.0",
     "build:std": "NODE_ENV=production webpack --config webpack.config.card.js --optimize-minimize",
-    "build:edit": "NODE_ENV=production webpack --config webpack.config.hatecrime.js --optimize-minimize"
+    "build:edit": "NODE_ENV=production webpack --config webpack.config.hatecrime.js --optimize-minimize",
+    "start_windows": "npm run build_windows && webpack-dev-server --public --host 0.0.0.0",
+    "build_windows": "npm run build:std_windows && npm run build:stdinit_windows && npm run build:edit_windows && npm run build:editinit_windows && npm run build:about_windows && npm run build:home_windows",
+    "build:std_windows": "set NODE_ENV=production && webpack --config webpack.config.card.js",
+    "build:stdinit_windows":"set NODE_ENV=production  &&  webpack --config webpack.config.cardinit.js",
+    "build:edit_windows": "set NODE_ENV=production && webpack --config webpack.config.hatecrime.js",
+    "build:editinit_windows": "set NODE_ENV=production && webpack --config webpack.config.hatecrimeinit.js",
+    "build:about_windows": "set NODE_ENV=production && webpack --config webpack.config.about.js",
+    "build:home_windows": "set NODE_ENV=production && webpack --config webpack.config.home.js"
   },
   "author": "",
   "license": "ISC"

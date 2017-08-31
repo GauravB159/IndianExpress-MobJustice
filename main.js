@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './src/js/App';
-
+import fixedNavBar from './src/js/fixedNavBar.js';
 window.ProtoGraph = window.ProtoGraph || {};
 window.ProtoGraph.Card = window.ProtoGraph.Card || {};
 
@@ -50,7 +50,6 @@ function getScreenSize() {
     height: height
   };
 }
-
 // ReactDOM.render(<App dataURL='src/data/data.json'/>, document.getElementById('card-list-div'));
 
 
